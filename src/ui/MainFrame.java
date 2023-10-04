@@ -46,6 +46,16 @@ public class MainFrame extends javax.swing.JFrame {
         submitLabel = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         userDetailsLabel = new javax.swing.JLabel();
+        firstLabel2 = new javax.swing.JLabel();
+        lastLabel2 = new javax.swing.JLabel();
+        ageLabel2 = new javax.swing.JLabel();
+        messageLabel2 = new javax.swing.JLabel();
+        typeLabel2 = new javax.swing.JLabel();
+        firstLabel3 = new javax.swing.JLabel();
+        lastLabel3 = new javax.swing.JLabel();
+        ageLabel3 = new javax.swing.JLabel();
+        messageLabel3 = new javax.swing.JLabel();
+        typeLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -153,14 +163,14 @@ public class MainFrame extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(269, 269, 269)
                         .addComponent(submitLabel)))
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(562, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(titleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
+                .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(firstLabel)
                     .addComponent(firstNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -186,26 +196,83 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(typeLabel))
                 .addGap(35, 35, 35)
                 .addComponent(submitLabel)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        userDetailsLabel.setText("Second panel");
+        userDetailsLabel.setText("Customer Detail Information");
+
+        firstLabel2.setText("First Name:");
+
+        lastLabel2.setText("Last Name:");
+
+        ageLabel2.setText("Age:");
+
+        messageLabel2.setText("Message:");
+
+        typeLabel2.setText("Type:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(278, 278, 278)
-                .addComponent(userDetailsLabel)
-                .addContainerGap(342, Short.MAX_VALUE))
+                .addGap(224, 224, 224)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lastLabel2)
+                    .addComponent(firstLabel2)
+                    .addComponent(ageLabel2)
+                    .addComponent(messageLabel2)
+                    .addComponent(typeLabel2))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(firstLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lastLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(ageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(569, Short.MAX_VALUE))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(typeLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(messageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(260, 260, 260)
+                .addComponent(userDetailsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(userDetailsLabel)
-                .addContainerGap(424, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(userDetailsLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(firstLabel2)
+                    .addComponent(firstLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lastLabel2)
+                    .addComponent(lastLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(ageLabel2)
+                    .addComponent(ageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(messageLabel2))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(messageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(125, 125, 125)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(typeLabel2)
+                    .addComponent(typeLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(71, 71, 71))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -252,7 +319,12 @@ public class MainFrame extends javax.swing.JFrame {
     } else {
         
         jPanel1.setVisible(false);
-        userDetailsLabel.setText(firstLabel + "  " + lastLabel + "  " + ageLabel + "  " + emailaddressLabel + "  " + messageLabel + "  " + typeLabel);
+        firstLabel3.setText(firstLabel);
+        lastLabel3.setText(lastLabel);
+        ageLabel3.setText(ageLabel);
+        messageLabel3.setText(messageLabel);
+        typeLabel3.setText(typeLabel);
+
         jPanel2.setVisible(true);  
         }
     }//GEN-LAST:event_submitLabelActionPerformed
@@ -359,22 +431,32 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel ageLabel;
+    private javax.swing.JLabel ageLabel2;
+    private javax.swing.JLabel ageLabel3;
     private javax.swing.JTextField ageTextField;
     private javax.swing.JLabel emailaddressLabel;
     private javax.swing.JTextField emailaddressTextField;
     private javax.swing.JLabel firstLabel;
+    private javax.swing.JLabel firstLabel2;
+    private javax.swing.JLabel firstLabel3;
     private javax.swing.JTextField firstNameTextField;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JLabel lastLabel;
+    private javax.swing.JLabel lastLabel2;
+    private javax.swing.JLabel lastLabel3;
     private javax.swing.JTextField lastNameTextField;
     private javax.swing.JLabel messageLabel;
+    private javax.swing.JLabel messageLabel2;
+    private javax.swing.JLabel messageLabel3;
     private javax.swing.JTextArea messageTextArea;
     private javax.swing.JButton submitLabel;
     private javax.swing.JLabel titleLabel;
     private javax.swing.JComboBox<String> typeDropdown;
     private javax.swing.JLabel typeLabel;
+    private javax.swing.JLabel typeLabel2;
+    private javax.swing.JLabel typeLabel3;
     private javax.swing.JLabel userDetailsLabel;
     // End of variables declaration//GEN-END:variables
 }

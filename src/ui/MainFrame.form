@@ -90,7 +90,7 @@
                           <Component id="submitLabel" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="183" max="32767" attributes="0"/>
+                  <EmptySpace pref="562" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -99,7 +99,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                   <Component id="titleLabel" min="-2" pref="40" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="firstLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="firstNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -131,7 +131,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="submitLabel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="98" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -290,18 +290,81 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="278" max="-2" attributes="0"/>
-                  <Component id="userDetailsLabel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="342" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lastLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="firstLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="ageLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="messageLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="typeLabel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="firstLabel3" min="-2" pref="149" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lastLabel3" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                      <Component id="ageLabel3" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="569" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="typeLabel3" min="-2" pref="157" max="-2" attributes="0"/>
+                              <Component id="messageLabel3" min="-2" pref="157" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
+                  <Component id="userDetailsLabel" min="-2" pref="252" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                  <Component id="userDetailsLabel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="424" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <Component id="userDetailsLabel" pref="40" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="firstLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="firstLabel3" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lastLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="lastLabel3" min="-2" pref="29" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="ageLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="ageLabel3" min="-2" pref="32" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                          <Component id="messageLabel2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="messageLabel3" min="-2" pref="114" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="typeLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="typeLabel3" min="-2" pref="29" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -309,8 +372,43 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="userDetailsLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Second panel"/>
+            <Property name="text" type="java.lang.String" value="Customer Detail Information"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="firstLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="ageLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Age:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="messageLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Message:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="typeLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Type:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="firstLabel3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastLabel3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ageLabel3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="messageLabel3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="typeLabel3">
         </Component>
       </SubComponents>
     </Container>
