@@ -97,6 +97,11 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         emailaddressTextField.setBackground(new java.awt.Color(255, 204, 204));
+        emailaddressTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                emailaddressTextFieldKeyReleased(evt);
+            }
+        });
 
         typeLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         typeLabel.setText("Type:");
@@ -168,9 +173,9 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(ageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ageTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(emailaddressLabel)
-                    .addComponent(emailaddressTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(emailaddressTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(messageLabel)
@@ -240,12 +245,34 @@ public class MainFrame extends javax.swing.JFrame {
         String emailaddressLabel = emailaddressTextField.getText();//for text fields
         String messageLabel = messageTextArea.getText();//for text field
         String typeLabel = typeDropdown.getSelectedItem().toString();//selected item dropdown 
-//        JOptionPane.showMessageDialog(this, firstLabel + "  " + lastLabel + "  " + ageLabel + "  " + emailaddressLabel + "  " + messageLabel + "  " + typeLabel, "User Information", JOptionPane.INFORMATION_MESSAGE);
-jPanel1.setVisible(false);
-userDetailsLabel.setText(firstLabel + "  " + lastLabel + "  " + ageLabel + "  " + emailaddressLabel + "  " + messageLabel + "  " + typeLabel);
-jPanel2.setVisible(true);
+        boolean isEmailAddressValid = isEmailAddressValid(emailaddressLabel);
+        if (isEmailAddressValid == false) {
+            JOptionPane.showMessageDialog(this, "invalid email address","Wrong Emial Format", JOptionPane.ERROR_MESSAGE);
+    
+    }
+        
+        jPanel1.setVisible(false);
+        userDetailsLabel.setText(firstLabel + "  " + lastLabel + "  " + ageLabel + "  " + emailaddressLabel + "  " + messageLabel + "  " + typeLabel);
+        jPanel2.setVisible(true);  
+        
     }//GEN-LAST:event_submitLabelActionPerformed
-
+    private boolean isEmailAddressValid(String emailAddress) {
+        if (emailAddress.charAt(0) == '@' || emailAddress.charAt(emailAddress.length() - 1) == '@') {
+            return false;
+        }
+        int atCounter = 0;
+        for (int i = 0; i < emailAddress.length(); i++) {
+            if (emailAddress.charAt(i) == '@') {
+                atCounter++;
+            }
+        }
+        if (atCounter ==1) {
+            return true;
+        } else {
+            return false;
+        }
+        // return atCounter == 1;
+    }
     private void firstNameTextFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_firstNameTextFieldKeyReleased
         // TODO add your handling code here:
         String firstName = firstNameTextField.getText().toLowerCase();
@@ -279,6 +306,22 @@ jPanel2.setVisible(true);
         }
 
     }//GEN-LAST:event_ageTextFieldKeyReleased
+
+    private void emailaddressTextFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailaddressTextFieldKeyReleased
+        // TODO add your handling code here:
+        String currentEmailAddressContent = emailaddressTextField.getText();
+        int atCounter = 0;
+        for (int i = 0; i < currentEmailAddressContent.length(); i++) {
+            if (currentEmailAddressContent.charAt(i) == '@') {
+                atCounter++;
+                if (atCounter >= 2) {
+                JOptionPane.showMessageDialog(this, "invalid email address","Wrong Emial Format", JOptionPane.ERROR_MESSAGE);
+                break;
+                }
+            }
+        }
+            
+    }//GEN-LAST:event_emailaddressTextFieldKeyReleased
 
     /**
      * @param args the command line arguments
