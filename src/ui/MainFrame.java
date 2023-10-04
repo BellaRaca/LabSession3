@@ -249,12 +249,12 @@ public class MainFrame extends javax.swing.JFrame {
         if (isEmailAddressValid == false) {
             JOptionPane.showMessageDialog(this, "invalid email address","Wrong Emial Format", JOptionPane.ERROR_MESSAGE);
     
-    }
+    } else {
         
         jPanel1.setVisible(false);
         userDetailsLabel.setText(firstLabel + "  " + lastLabel + "  " + ageLabel + "  " + emailaddressLabel + "  " + messageLabel + "  " + typeLabel);
         jPanel2.setVisible(true);  
-        
+        }
     }//GEN-LAST:event_submitLabelActionPerformed
     private boolean isEmailAddressValid(String emailAddress) {
         if (emailAddress.charAt(0) == '@' || emailAddress.charAt(emailAddress.length() - 1) == '@') {
@@ -271,7 +271,6 @@ public class MainFrame extends javax.swing.JFrame {
         } else {
             return false;
         }
-        // return atCounter == 1;
     }
     private void firstNameTextFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_firstNameTextFieldKeyReleased
         // TODO add your handling code here:
