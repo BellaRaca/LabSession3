@@ -237,26 +237,24 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(typeLabel2))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(84, 84, 84)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(firstLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lastLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(ageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(messageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(emailLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(29, 29, 29))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(35, 35, 35)
-                                .addComponent(typeLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(typeLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(messageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(emailLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addGap(55, 55, 55)
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(firstLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ageLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(lastLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(280, 280, 280)
                         .addComponent(userDetailsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(556, Short.MAX_VALUE))
+                .addContainerGap(569, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -370,7 +368,7 @@ public class MainFrame extends javax.swing.JFrame {
         String firstName = firstNameTextField.getText().toLowerCase();
         for (int i = 0; i < firstName.length(); i++) {
             if (firstName.charAt(i) < 97 || firstName.charAt(i) > 122) {
-                JOptionPane.showMessageDialog(this, "Your first name must contain character from 'A' to 'Z' or character from 'a' to 'z'", "Wrong input", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Your first name must contain character from 'A' to 'Z' or character from 'a' to 'z'", "Wrong first name input", JOptionPane.ERROR_MESSAGE);
                 break;
             }
         }
@@ -385,16 +383,16 @@ public class MainFrame extends javax.swing.JFrame {
         String age = ageTextField.getText();
         for (int i = 0; i < age.length(); i++) {
             if (age.charAt(i) < 48 || age.charAt(i) > 57) {
-                JOptionPane.showMessageDialog(this, "The age must contain from '1' to '9'", "Wrong Input", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "The age must contain from '1' to '9'", "Wrong age Input", JOptionPane.ERROR_MESSAGE);
                 break;
             }
         }
         if (age.length() >= 2 && age.charAt(0) == '0') {
-            JOptionPane.showMessageDialog(this, "The age format is wrong", "Wrong Input", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "The age format is wrong", "Wrong age Input", JOptionPane.ERROR_MESSAGE);
         }
         int ageNumberFormat = Integer.parseInt(age);
         if (ageNumberFormat >= 150) {
-        JOptionPane.showMessageDialog(this, "The age is too large", "Wrong Input", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(this, "The age is too large", "Wrong age Input", JOptionPane.ERROR_MESSAGE);
         }
 
     }//GEN-LAST:event_ageTextFieldKeyReleased
@@ -420,7 +418,7 @@ public class MainFrame extends javax.swing.JFrame {
         String lastName = lastNameTextField.getText().toLowerCase();
         for (int i = 0; i < lastName.length(); i++) {
             if (lastName.charAt(i) < 97 || lastName.charAt(i) > 122) {
-             JOptionPane.showMessageDialog(this, "Your last name must contain character from 'A' to 'Z' or character from 'a' to 'z'", "Wrong input", JOptionPane.ERROR_MESSAGE);
+             JOptionPane.showMessageDialog(this, "Your last name must contain character from 'A' to 'Z' or character from 'a' to 'z'", "Wrong last name input", JOptionPane.ERROR_MESSAGE);
                 break;   
             }
         }
